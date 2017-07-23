@@ -18,6 +18,8 @@ if `ssh-add -l 2> /dev/null | tee /dev/stderr | grep -q id_rsa`; then
 		-e ssh \
 		html \
 		'bullet@jfjhh.science:/var/www/'
+	# SSH password authentication is disabled on that server, so don't even
+	# think about it.
 else
 	printf "\033[0;31m[[=== No SSH Key Available! ===]]\033[0m\n"
 	exit 1
