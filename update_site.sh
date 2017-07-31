@@ -9,8 +9,10 @@ cd "${RUNDIR}/markdown"
 ./generate_posts.sh
 
 # Generate resized SVG and fallback PNG files.
-cd "${RUNDIR}/svg"
-./process_svg.sh
+if [[ "$1" != "nosvg" ]]; then
+	cd "${RUNDIR}/svg"
+	./process_svg.sh
+fi
 
 cd "${RUNDIR}"
 
