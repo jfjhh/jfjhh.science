@@ -2,7 +2,7 @@
 title: 'Archive'
 author:
 - Alex Striff
-date: 2017-07-22
+date: 2017-07-30
 ---
 
 All Posts
@@ -11,6 +11,6 @@ All Posts
 Newer Posts First
 -----------------
 
-- [Parametric Equations [WIP]](/param.html) (*2017-07-21*).
+- [Curve Systems [WIP]](/param.html) (*2017-07-21*).
 - [Initialization](/init.html) (*2017-07-20*).
 
