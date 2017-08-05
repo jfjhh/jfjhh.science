@@ -507,7 +507,7 @@ the *interpolation system* $\mathscr{I}$, defined as
 $$
 \begin{align*}
 \forall\mathfrak{i} : \nexists (\mathfrak{j},m)
-&: m(\mathfrak{j}) = \mathcal{i}, j \neq i \\
+&: m(\mathfrak{j}) = \mathfrak{i}, \mathfrak{j} \neq \mathfrak{i} \\
 \wedge \forall u, \nexists v
 &: \forall t, \mathfrak{i} = u \wedge \mathfrak{i} = v \wedge u \neq v, \\
 \forall\mathcal{D} &: M(\mathcal{D}) = \mathscr{D}
