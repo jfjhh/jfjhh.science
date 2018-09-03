@@ -5,7 +5,7 @@ author:
 date: 2017-07-20
 ---
 
-[This website][] is owned, created, and administered by Alex Striff (*jfjhh*).
+[This website][] is owned, created, and administered by Alex Striff *(jfjhh)*.
 You can email him [here][], especially if there is something wrong with the
 site. If you email him, you have the option of using his [PGP Key][] to do so,
 though nobody knows what [PGP][] even [is][]. He also has a [GitHub Page][] that
