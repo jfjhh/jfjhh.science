@@ -1,7 +1,7 @@
 Jfjhh.Science
 =============
 
-Scripts and markdown files for [jfjhh.science](http://jfjhh.science).
+Scripts and markdown files for [jfjhh.science](https://people.reed.edu/~striffa).
 
 Legal Disclaimer
 ----------------
