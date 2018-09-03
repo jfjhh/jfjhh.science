@@ -24,8 +24,8 @@ function archive_line()
 	cat <<-EOF
 	- [`head $1 | grep '^title: ' | head -1 | \
 		sed "s%^.*[\"']\(.*\)[\"']%\1%"`](`basename -s .md \
-		$1`.html) (*`head $1 | grep '^date: ' | head -1 | \
-		sed "s%^date: %%"`*).
+		$1`.html) *(`head $1 | grep '^date: ' | head -1 | \
+		sed "s%^date: %%"`)*.
 	EOF
 }
 
