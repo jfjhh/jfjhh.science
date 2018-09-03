@@ -11,6 +11,7 @@ All Posts
 Newer Posts First
 -----------------
 
+- [Partial Typesetting of the Digha Nikaya](digha_nikaya.html) *(2018-04-26)*.
 - [Electronics Wall Information](electronics_wall.html) *(2018-09-03)*.
 - [ Mechanics](ll_notes.html) *(2018-09-03)*.
 - [Reed Notes $\LaTeX$ Class](reednotes.html) *(2018-06-04)*.
