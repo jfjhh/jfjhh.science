@@ -10,8 +10,7 @@ if [ -f "$1" ]; then
 		--template="${TEMPLATEDIR}/post.html" \
 		-c 'css/default.css' \
 		--toc \
-		--no-highlight \
-		--mathjax='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full' \
+		--mathjax='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML' \
 		--email-obfuscation=javascript \
 		-i "$1" \
 		-o "${SITEDIR}/${HTML}"
