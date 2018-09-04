@@ -1,2 +1,11 @@
-html
+manifest.txt
+html/**/*
+!html/css
+!html/css/**/*
+!html/js
+!html/js/**/*
+!html/robots.txt
+!html/favicon.ico
+!html/favicon.png
+!html/apple-touch-icon.png
 

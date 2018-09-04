@@ -1,0 +1,289 @@
+/**
+ * The default theme for jfjhh.science.
+ * Copyright (C) Alex Striff 2017.
+ * This software is licensed under the MIT License.
+ */
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500');
+
+body {
+	background: #fdfdfd;
+	color: #1d1d1d;
+	font-family: "EB Garamond", Serif;
+}
+
+#body_container {
+	margin: 0 auto 2.25em;
+	padding: 0 2.5%;
+}
+
+@media print {
+	#body_container {
+		width: 85% !important;
+	}
+
+	#content {
+		font-size: 1em !important;
+	}
+
+	a, p, h1, h2, h3, h4, h5, h6, code {
+		color: #000 !important;
+	}
+
+	a:after {
+		content: " (" attr(href) ") ";
+		font-size: 0.625em;
+		font-weight: normal;
+		font-family: "Dejavu Sans Mono", "Droid Sans Mono", "Anonymous Pro", "Source Pro", "Courier New", "Courier", Monospace;
+	}
+
+	code.sourceCode {
+		box-shadow: none !important;
+	}
+}
+
+@media all and (min-width: 32em) {
+	#body_container {
+		width: 40%;
+		min-width: 32em;
+		padding: 0 2.5%;
+	}
+}
+
+#sitetitle {
+	margin: 0;
+	text-align: center;
+	color: #adadad;
+	letter-spacing: 0.25em;
+	font-variant: small-caps;
+	font-size: 1em;
+}
+
+#header_container {
+	border-left: none;
+	border-right: none;
+	padding-top: 1em;
+	overflow: auto;
+}
+
+#header_titles {
+	float: left;
+	width: 100%;
+}
+
+#header_info {
+	text-align: center;
+	margin-top: 0.25em;
+	overflow: auto;
+}
+
+#authors {
+	margin-bottom: 0.25em;
+}
+
+.title, .subtitle, .author, .date {
+	margin: 0;
+}
+
+header {
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 1em;
+	font-weight: 500;
+	color: #4d4d4d;
+	overflow: hidden;
+}
+
+.title, .subtitle {
+	text-align: center;
+}
+
+.title {
+	font-size: 2em;
+	color: #2d2d2d;
+}
+
+.subtitle {
+	margin-top: 0.25em;
+	font-size: 1.125em;
+	color: #4d4d4d;
+}
+
+#authors, .author, .date {
+	color: #adadad;
+	text-align: center;
+	display: inline;
+	font-size: 0.825em;
+}
+
+.author {
+	padding-right: 0.5em;
+	font-style: italic;
+}
+
+.author + .author {
+	border-left: solid 1px #586e75;
+	padding-left: 0.75em;
+}
+
+.date {
+	font-style: italic;
+	padding-left: 0.5em;
+	border-left: 1px dotted #f0f0f0;
+}
+
+nav {
+	width: 100%;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav#sitenav {
+	margin-top: -0.625em;
+	text-align: center;
+}
+
+nav#sitenav ul {
+	padding: 0;
+}
+
+nav#sitenav li {
+	padding-right: 0.75em;
+	font-style: italic;
+	display: inline;
+}
+
+nav#sitenav li ~ li {
+	border-left: dotted 1px #efefef;
+	padding-left: 1em;
+}
+
+nav.docnav {
+	line-height: 1.5;
+}
+
+@media all and (min-width: 60em) {
+	nav.docnav {
+		position: fixed;
+		float: left;
+		width: 20%;
+		width: 20vw;
+		top: 3.125%;
+		top: 3.125vw;
+		bottom: 3.125%;
+		bottom: 3.125vw;
+		left: 3.125%;
+		left: 3.125vw;
+		padding-right: 3.125%;
+		padding-right: 3.125vw;
+		overflow: auto;
+	}
+
+	nav.docnav {
+		opacity: 0.15;
+		-webkit-transition: opacity 0.25s linear;
+		-moz-transition: opacity 0.25s linear;
+		-o-transition: opacity 0.25s linear;
+		transition: opacity 0.25s linear;
+	}
+
+	nav.docnav li {
+		opacity: 0;
+	}
+
+	nav.docnav:hover {
+		opacity: 1;
+	}
+
+	nav.docnav:hover li {
+		opacity: 1;
+	}
+}
+
+#content {
+	padding-bottom: 1em;
+	border-bottom: 1px dotted #f0f0f0;
+	font-size: 1.125em;
+}
+
+#content p {
+	text-indent: 1em;
+}
+
+#footer {
+	margin: 0.5em 0;
+	font-size: 0.75em;
+	color: #adadad;
+}
+
+#copyright {
+	float: left;
+}
+
+#cclicense {
+	float: right;
+	opacity: 0.15;
+}
+
+#cclicense:hover {
+	opacity: 1;
+}
+
+a {
+	text-decoration: none;
+	color: #268bd2; /* Solarized Blue */
+	-webkit-transition: color 0.0625s linear;
+	-moz-transition: color 0.0625s linear;
+	-o-transition: color 0.0625s linear;
+	transition: color 0.0625s linear;
+}
+
+a:hover {
+	color: #2aa198; /* Solarized Cyan */
+}
+
+a:visited {
+	color: #6c71c4; /* Solarized Violet */
+}
+
+a:visited:hover {
+	color: #859900; /* Solarized Green */
+}
+
+pre.sourceCode {
+	margin: auto;
+	padding: 0.5em;
+	font-size: 0.65em;
+	overflow: auto;
+}
+
+code.sourceCode {
+	border-radius: 0.5em;
+}
+
+code.sourceCode {
+	box-shadow: #fdf6e3 0 0 0.625em;
+}
+
+code {
+	font-family: "Bitstream Vera Sans Mono", "Dejavu Sans Mono", "Droid Sans Mono", "Anonymous Pro", "Source Pro", "Courier New", "Courier", Monospace;
+}
+
+img, image {
+	display: block;
+	margin: 0 auto;
+	width: 66.666667%;
+	height: auto;
+}
+
+p.caption {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: 500;
+}
+
