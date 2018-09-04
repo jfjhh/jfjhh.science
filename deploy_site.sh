@@ -12,16 +12,17 @@ MANIFEST="manifest.txt"
 (
 rm -f "$MANIFEST";
 echo "get html/$MANIFEST";
+sleep 0.2
 while [ ! -f "$MANIFEST" ]; do
 	sleep 0.5;
 done;
-md5sum -c --quiet "$MANIFEST" 2>/dev/null \
+md5sum -c --quiet "$MANIFEST" \
 	| cut --complement -d : -f 2- \
-	| awk '{print "put " $1;}';
+	| awk '{print "put -f " $1;}';
 find html -type f -print0 \
 	| xargs -0 md5sum -b > "$MANIFEST";
-echo "put $MANIFEST";
-) | sh -c "$DEPLOY_CMD"
+echo "put $MANIFEST html";
+) | tee sftp.log | sh -c "$DEPLOY_CMD"
 
 printf "\033[0;32m[[=== Site Deployed. ===]]\033[0m\n"
 

@@ -1,3 +1,4 @@
+*.log
 manifest.txt
 html/**/*
 !html/css
