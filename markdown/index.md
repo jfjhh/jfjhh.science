@@ -17,5 +17,6 @@ contain updates as I progress on my RF journey.
 Voltage Controlled Oscillator
 =============================
 
-**TODO.**
+**TODO:** Actually finish building a working high-level VCO for frequency
+conversion.
 
