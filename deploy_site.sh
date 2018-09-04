@@ -26,7 +26,7 @@ else
 		| uniq -u\
 		| cut --complement -d '*' -f -1 \
 		| sort -u \
-		| awk '{print "put -f " $1;}';
+		| awk '{print "put -f " $1 " html";}';
 	echo "put $MANIFEST html";
 fi | tee sftp.log | sh -c "$DEPLOY_CMD"
 
