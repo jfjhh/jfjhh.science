@@ -133,6 +133,15 @@ h1, h2, h3, h4, h5, h6 {
 	border-left: 1px dotted #f0f0f0;
 }
 
+ul.incremental li {
+	color: #8d8d8d;
+	list-style: circle;
+}
+
+ul.incremental li p {
+	color: #1d1d1d;
+}
+
 nav {
 	width: 100%;
 }
