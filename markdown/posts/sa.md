@@ -3,7 +3,7 @@ title: 'Building a Spectrum Analyzer?'
 subtitle: 'Fun with RF'
 author:
 - Alex Striff
-date: 2018-09-04
+date: 2018-09-07
 ---
 
 Abstract
@@ -19,6 +19,8 @@ Voltage Controlled Oscillator
 
 **TODO:** Actually finish building a working high-level VCO for frequency
 conversion.
+
+This is the result of my first design attempt:
 
 ![Colpitts Oscillator Schematic 1](img/colpitts-1.png)
 
@@ -36,4 +38,17 @@ signal is similar to what was measured on the real circuit.
 ![Emitter Signal: Low Magnification](img/colpitts-ngspice-low.png)
 ![Emitter Signal: Medium Magnification](img/colpitts-ngspice-medium.png)
 ![Emitter Signal: High Magnification](img/colpitts-ngspice-high.png)
+
+**Reality:** The board sucks, and I don't just mean the soldering to the ground
+plane. I get $75 - 85\;MHz$ over the tuning range of $1 - 11.5\;V$, and for some
+reason the circuit is incredibly sensitive to both loading and external objects,
+as it is unshielded. The other transistors are another follower and a
+common-base amplifier, but neither of them work because they load down the
+oscillator (transistor not visible) too much when connected, to the point where
+the oscillation dies out immediately. With only the additional follower
+connected, the oscillation *still* dies out, but slowly over about $10\;s$, and
+can be restarted if the board is tapped. Clearly some more work needs to be
+done.
+
+![Colpitts Board](img/colpitts-board.jpg)
 
