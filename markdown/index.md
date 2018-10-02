@@ -17,9 +17,6 @@ contain updates as I progress on my RF journey.
 Voltage Controlled Oscillator
 =============================
 
-**TODO:** Actually finish building a working high-level VCO for frequency
-conversion.
-
 This is the result of my first design attempt:
 
 ![Colpitts Oscillator Schematic 1](img/colpitts-1.png)
@@ -51,4 +48,27 @@ can be restarted if the board is tapped. Clearly some more work needs to be
 done.
 
 ![Colpitts Board](img/colpitts-board.jpg)
+
+Voltage Controlled Oscillator Board
+===================================
+
+I finally finished a working oscillator board, building on the above prototype.
+
+[![Oscillator Board Output](img/osc_board.jpg)](pub/osc_board.pdf)
+![Oscillator Board Side](img/osc_side.jpg)
+![Oscillator Board Top](img/osc_top.jpg)
+![Oscillator Board Output](img/osc_scope.jpg)
+
+Mixer
+=====
+
+Now for frequency conversion. Here is the first quick look at the diode ring
+mixer operation. The slow phase change of the B timebase signal in the scope
+shot is confirmation of the presence of the sum mixing product, since the LO of
+the mixer was fed from the above VCO board, and the RF port by a signal
+generator at about a tenth of the frequency.
+
+![Mixer Top](img/mix_top.jpg)
+![Mixer Side](img/mix_side.jpg)
+![Mixer Scope Shot](img/mix_scope.jpg)
 
