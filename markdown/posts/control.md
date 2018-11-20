@@ -4,7 +4,7 @@ title: 'Control Theory'
 subtitle: 'Reed Student Math Colloquium Presentation Notes'
 author:
 - Alex Striff
-date: 2018-10-18
+date: 2018-11-20
 ---
 
 Here are the links for the [PDF (has figures)][pdf] and [$\LaTeX$][tex] versions

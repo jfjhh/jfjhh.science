@@ -2,7 +2,7 @@
 title: 'Archive'
 author:
 - Alex Striff
-date: 2018-10-19
+date: 2018-11-20
 ---
 
 All Posts
@@ -11,7 +11,7 @@ All Posts
 Newer Posts First
 -----------------
 
-- [Control Theory](control.html) *(2018-10-18)*.
+- [Control Theory](control.html) *(2018-11-20)*.
 - [Building a Spectrum Analyzer?](sa.html) *(2018-09-07)*.
 - [Notes on Landau and Lifshitz: Mechanics](ll_notes.html) *(2018-09-03)*.
 - [Partial Typesetting of the Digha Nikaya](digha_nikaya.html) *(2018-04-26)*.
